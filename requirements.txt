@@ -1,24 +1,25 @@
 # LLM y RAG
-langchain==0.1.0
-langchain-community==0.0.13
-ollama==0.1.6
+langchain==0.1.16
+langchain-community==0.0.38
+ollama==0.3.3
 
 # Embeddings locales
-sentence-transformers==2.3.1
-torch==2.1.2
+sentence-transformers==2.7.0
+torch==2.3.1
+transformers==4.41.2
 
 # Base de datos vectorial
-chromadb==0.4.22
+chromadb==0.5.0
 
 # Procesamiento de documentos
-pypdf==4.0.1
+pypdf==4.2.0
 python-docx==1.1.0
-tiktoken==0.5.2
+tiktoken==0.7.0
 
 # Utilidades
-python-dotenv==1.0.0
-rich==13.7.0
-tqdm==4.66.1
+python-dotenv==1.0.1
+rich==13.7.1
+tqdm==4.66.4
 
-# Opcional pero recomendado
-numpy==1.26.3
+# Dependencias adicionales
+numpy==1.26.4
