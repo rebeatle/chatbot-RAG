@@ -33,10 +33,12 @@ class VectorStore:
                 )
             )
             
-            # Obtener o crear colección
+            # Obtener o crear colección SIN función de embedding por defecto
+            # Usaremos sentence-transformers manualmente
             self.collection = self.client.get_or_create_collection(
                 name=self.collection_name,
-                metadata={"hnsw:space": "cosine"}
+                metadata={"hnsw:space": "cosine"},
+                embedding_function=None  # Deshabilitar embedding por defecto
             )
             
             count = self.collection.count()
@@ -122,7 +124,8 @@ class VectorStore:
             self.client.delete_collection(self.collection_name)
             self.collection = self.client.create_collection(
                 name=self.collection_name,
-                metadata={"hnsw:space": "cosine"}
+                metadata={"hnsw:space": "cosine"},
+                embedding_function=None  # Deshabilitar embedding por defecto
             )
             console.print("[green]✓[/green] Colección limpiada")
         except Exception as e:

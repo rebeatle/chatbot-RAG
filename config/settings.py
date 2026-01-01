@@ -36,8 +36,35 @@ MAX_TOKENS = int(os.getenv("MAX_TOKENS", "2000"))
 
 # Extensiones de archivos soportadas
 SUPPORTED_EXTENSIONS = {
+    # Texto
     '.txt': 'text',
+    '.md': 'markdown',
+    
+    # PDF
     '.pdf': 'pdf',
+    
+    # Word
     '.docx': 'docx',
-    '.doc': 'doc'
+    '.doc': 'doc',
+    
+    # Excel
+    '.xlsx': 'excel',
+    '.xls': 'excel_old',
+    
+    # PowerPoint
+    '.pptx': 'powerpoint',
+    '.ppt': 'powerpoint_old',
+    
+    # Datos
+    '.csv': 'csv',
+    '.json': 'json',
+    '.xml': 'xml',
+    
+    # Web
+    '.html': 'html',
+    '.htm': 'html',
+    
+    # Otros
+    '.rtf': 'rtf',
+    '.epub': 'epub' ,
 }

@@ -11,10 +11,21 @@ transformers==4.41.2
 # Base de datos vectorial
 chromadb==0.5.0
 
-# Procesamiento de documentos
+# Procesamiento de documentos - BÁSICOS
 pypdf==4.2.0
 python-docx==1.1.0
 tiktoken==0.7.0
+
+# Procesamiento de documentos - NUEVOS
+openpyxl==3.1.2          # Excel (.xlsx)
+xlrd==2.0.1              # Excel antiguo (.xls)
+python-pptx==0.6.23      # PowerPoint
+pandas==2.0.3            # CSV y análisis de datos
+markdown==3.5.2          # Markdown
+beautifulsoup4==4.12.3   # HTML
+lxml==5.1.0              # Parseo XML/HTML
+striprtf==0.0.26         # RTF
+ebooklib==0.18           # libros EPUB
 
 # Utilidades
 python-dotenv==1.0.1

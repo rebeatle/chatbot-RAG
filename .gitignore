@@ -38,3 +38,4 @@ models/
 .DS_Store
 Thumbs.db
 "@ | Out-File -FilePath .gitignore -Encoding utf8
+config/__pycache__/settings.cpython-311.pyc
