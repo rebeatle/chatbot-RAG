@@ -121,13 +121,7 @@ ollama serve
 - Primera vez: Descarga ~420MB (normal)
 - Después: Debería ser rápido
 
-## Próximas Mejoras
 
-- [ ] GUI con Gradio/Streamlit
-- [ ] Soporte para más formatos (HTML, CSV, etc.)
-- [ ] Historial de conversación
-- [ ] Múltiples colecciones de documentos
-- [ ] Export de respuestas
 
 ## Licencia
 
