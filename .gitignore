@@ -21,7 +21,6 @@ build/
 *.swo
 
 # Proyecto específico
-.env
 data/documents/*
 data/vectorstore/*
 *.log
